@@ -1,0 +1,384 @@
+<form class="search-form">
+    <div class="header">
+        <div class="headline">
+            איזה נכס ל<span>מכירה </span>תרצו לחפש
+            ?
+        </div>
+        <button type="button" class="y2_btn">
+            <div class="button_content" style="display: flex; align-items: center;">
+                <svg data-v-192c75e9="" width="20" height="20" viewBox="0 0 20 20" class="bell_icon orange">
+                    <g data-v-192c75e9="" transform="translate(2 1)">
+                        <ellipse data-v-192c75e9="" cx="7.206" cy="14.44" fill="#ff7100" stroke="#ff7100"
+                            stroke-width=".926" rx="1.9" ry="1.878" transform="rotate(18 9.206 14.44)"></ellipse>
+                        <path data-v-192c75e9="" fill="#ff7100" stroke="#ff7100" stroke-width=".5"
+                            d="M12.8231052,15.8320384 L1.59588336,12.1600933 C0.741326334,11.8806041 0.269836303,10.9686617 0.542985389,10.1224645 C0.815755737,9.27744069 1.72954622,8.81726719 2.58246568,9.09622075 C2.65893815,9.12123163 2.74258017,9.07909159 2.76739036,9.00223131 L3.8459642,5.66088349 C4.61481752,3.27902861 6.84212555,1.71637786 9.30527285,1.73266656 L9.38971013,1.47108564 C9.6874779,0.548621518 10.6844662,0.047077824 11.6140351,0.351100142 C12.5450902,0.655608518 13.0578164,1.64918572 12.7595436,2.57321436 L12.6750952,2.83482976 C14.6772473,4.27905538 15.566613,6.86145268 14.797923,9.24280184 L13.7193491,12.5841497 C13.6940463,12.6625362 13.7361292,12.7441081 13.8140718,12.7695998 C14.6656729,13.0481222 15.1376194,13.9612666 14.8647776,14.8065116 C14.5919484,15.6517178 13.6770509,16.1113276 12.8231052,15.8320384 Z"
+                            class="bell_stroke"></path>
+                        <path data-v-192c75e9="" fill="white"
+                            d="M9.59960261,2.62300607 L9.94192819,2.64576241 L10.2321685,1.74661782 C10.3809686,1.2856454 10.8799668,1.03461995 11.3443694,1.18650621 C11.8102812,1.33888607 12.0663829,1.83516822 11.9170852,2.29768218 L11.626842,3.19683568 L11.9170605,3.38096657 C13.7800716,4.56296579 14.6361763,6.85847156 13.9554646,8.96726966 L12.8768908,12.3086175 C12.7026263,12.8484768 13.0012781,13.4273719 13.5444061,13.6050059 C13.9311015,13.7314774 14.1461096,14.1474854 14.0223193,14.5309794 C13.8985247,14.9144864 13.481759,15.1238537 13.092771,14.9966324 L1.86554913,11.3246872 C1.47584389,11.1972313 1.26136338,10.7823892 1.38544376,10.3979967 C1.50929716,10.0143073 1.92520534,9.80486117 2.31279991,9.93162681 C2.85466526,10.1088478 3.43614333,9.81589092 3.60984873,9.27776349 L4.68842257,5.93641567 C5.369295,3.82711954 7.40211168,2.47692622 9.59960261,2.62300607 Z"
+                            class="bell_fill"></path>
+                    </g>
+                </svg>
+                <div class="button_text" style="font-size: 12px; color: #ff7100;">
+                    קבלו התראות במייל על החיפוש
+                </div>
+            </div>
+        </button>
+    </div>
+    <div class="form-input">
+        <div class="city-search">
+            <label for="">חפשו אזור,עיר,שכונה,<br> או רחוב</label>
+            <input type="text" style="height: 35px; width: 100px;" #serchInput (input)="onInput()">
+            <div class="search-card" *ngIf="onOpenInput">
+                <div class="mini-title"> חפשו אזור עיר או שכונה</div>
+                <div class="street">
+                    <label *ngIf="adress.length>0">רחוב</label>
+                    <div class="street-array" *ngFor="let el of adress" (click)="onSelect(el)">{{el}}</div>
+                </div>
+                <div class="area">
+                    <label *ngIf="neighberhood.length>0">שכונה</label>
+                    <div class="street-array" *ngFor="let el of neighberhood" (click)="onSelect(el)">{{el}}</div>
+                </div>
+                <div class="city">
+                    <label *ngIf="city.length>0">עיר</label>
+                    <div class="street-array" *ngFor="let el of city" (click)="onSelect(el)">{{el}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="assests-type">
+            <form (ngSubmit)=onSubmit(f) #f="ngForm">
+                <li class="search_column col_x3">
+                    <div class="searchbar_field_drop search_drop_multi_group_checkbox" data-field-name="property"
+                        category="realestate" sub-category="forsale"><label for="property" class="field_label">
+                            סוג נכס
+                        </label>
+                        <div class="y2_dropdown field_dropdown right">
+                            <!---->
+                            <div class="dropdown_btn"><button type="button" (click)="onAssetTypeSelect()"
+                                    data-test-id="searchBarFieldDrop_button_property" class="field_drop_button">
+                                    <span #span>{{messageTypeAsset}}</span> <span *ngIf="!assetTypeOpen"
+                                        class="arrow-icon"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                            height="15" viewBox="0 0 24 24">
+                                            <path
+                                                d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+                                        </svg></span>
+                                    <span class="arrow-icon" *ngIf="assetTypeOpen"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
+                                        </svg></span>
+                                </button></div>
+                            <div class="dropdown_content" *ngIf="assetTypeOpen" #dropDown>
+                                <div class="field_content">
+                                    <ul class="y2_mobile_multi_select" value="">
+                                        <li class="checkbox_slot main_all">
+                                            <div><label class="y2_checkbox datalist_checkbox"><input type="checkbox"
+                                                        class="checkbox" value="false" name="all-asset"
+                                                        (click)="onAllAsset()"> <span class="checkmark"></span>
+                                                    <span class="cb_text">
+                                                        כל סוגי הנכסים
+                                                        <!---->
+                                                    </span></label>
+                                                <!---->
+                                            </div>
+                                            <ul class="sub_multi_select" style="display: none;"></ul>
+                                        </li>
+                                        <li class="checkbox_slot">
+                                            <div class="checkBox-element">
+                                                <label class="y2_checkbox datalist_checkbox">
+                                                    <input type="checkbox" class="checkbox" (click)="onChecked()"
+                                                        [(ngModel)]="apartmenser" name="apartments"> <span
+                                                        class="checkmark"></span>
+                                                    <span class="cb_text">
+                                                        דירות
+                                                        <!---->
+                                                    </span></label>
+                                                <div (click)="openApartment=!openApartment">
+                                                    <span *ngIf="!openApartment" class="arrow-icon"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                            viewBox="0 0 24 24">
+                                                            <path
+                                                                d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+                                                        </svg></span>
+                                                    <span class="arrow-icon" *ngIf="openApartment"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                            viewBox="0 0 24 24">
+                                                            <path
+                                                                d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
+                                                        </svg></span>
+                                                </div>
+                                            </div>
+                                            <ul class="sub_multi_select" *ngIf="openApartment">
+                                                <li class="checkbox_slot"><label
+                                                        class="y2_checkbox datalist_checkbox"><input type="checkbox"
+                                                            class="checkbox" value="1"
+                                                            [(ngModel)]="checkedApartments[0]" name="apartment">
+                                                        <span class="checkmark"></span>
+                                                        <span class="cb_text">
+                                                            דירה
+                                                        </span></label></li>
+                                                <li class="checkbox_slot"><label
+                                                        class="y2_checkbox datalist_checkbox"><input type="checkbox"
+                                                            class="checkbox" value="3"
+                                                            [(ngModel)]="checkedApartments[1]" name="garden-apartment">
+                                                        <span class="checkmark"></span>
+                                                        <span class="cb_text">
+                                                            דירת גן
+                                                        </span></label></li>
+                                                <li class="checkbox_slot"><label
+                                                        class="y2_checkbox datalist_checkbox"><input type="checkbox"
+                                                            class="checkbox" value="6"
+                                                            [(ngModel)]="checkedApartments[2]" name="penthouse"> <span
+                                                            class="checkmark"></span>
+
+                                                        <span class="cb_text">
+                                                            גג/פנטהאוז
+                                                        </span></label></li>
+                                                <li class="checkbox_slot"><label
+                                                        class="y2_checkbox datalist_checkbox"><input type="checkbox"
+                                                            class="checkbox" value="7"
+                                                            [(ngModel)]="checkedApartments[3]" name="two-floor">
+                                                        <span class="checkmark"></span>
+
+                                                        <span class="cb_text">
+                                                            דופלקס
+                                                        </span></label></li>
+                                                <li class="checkbox_slot"><label
+                                                        class="y2_checkbox datalist_checkbox"><input type="checkbox"
+                                                            class="checkbox" value="25"
+                                                            [(ngModel)]="checkedApartments[4]" name="vacation-house">
+                                                        <span class="checkmark"></span>
+
+                                                        <span class="cb_text">
+                                                            דירת נופש
+                                                        </span></label></li>
+                                                <li class="checkbox_slot"><label
+                                                        class="y2_checkbox datalist_checkbox"><input type="checkbox"
+                                                            class="checkbox" value="49"
+                                                            [(ngModel)]="checkedApartments[5]" name="parter">
+                                                        <span class="checkmark"></span>
+
+                                                        <span class="cb_text">
+                                                            מרתף/פרטר
+                                                        </span></label></li>
+                                                <li class="checkbox_slot"><label
+                                                        class="y2_checkbox datalist_checkbox"><input type="checkbox"
+                                                            class="checkbox" value="51"
+                                                            [(ngModel)]="checkedApartments[6]" name="three-floor">
+                                                        <span class="checkmark"></span>
+
+                                                        <span class="cb_text">
+                                                            טריפלקס
+                                                        </span></label></li>
+                                                <li class="checkbox_slot"><label
+                                                        class="y2_checkbox datalist_checkbox"><input type="checkbox"
+                                                            class="checkbox" value="11"
+                                                            [(ngModel)]="checkedApartments[7]" name="housing-unit">
+                                                        <span class="checkmark"></span>
+
+                                                        <span class="cb_text">
+                                                            יחידת דיור
+                                                        </span></label></li>
+                                                <li class="checkbox_slot"><label
+                                                        class="y2_checkbox datalist_checkbox"><input type="checkbox"
+                                                            class="checkbox" value="4"
+                                                            [(ngModel)]="checkedApartments[8]" name="studio">
+                                                        <span class="checkmark"></span>
+
+                                                        <span class="cb_text">
+                                                            סטודיו/לופט
+                                                        </span></label></li>
+                                            </ul>
+                                        </li>
+                                        <li class="checkbox_slot">
+                                            <div class="checkBox-element">
+                                                <label class="y2_checkbox datalist_checkbox">
+                                                    <input type="checkbox" class="checkbox" value="false"
+                                                        (click)="onVilas()" name="vilas" [(ngModel)]="vilaser"> <span
+                                                        class="checkmark"></span>
+                                                    <span class="cb_text">
+                                                        צמודי קרקע
+                                                        <!---->
+                                                    </span></label>
+                                                <div (click)="openvila=!openvila">
+                                                    <span *ngIf="!openvila" class="arrow-icon"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                            viewBox="0 0 24 24">
+                                                            <path
+                                                                d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+                                                        </svg></span>
+                                                    <span class="arrow-icon" *ngIf="openvila"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                            viewBox="0 0 24 24">
+                                                            <path
+                                                                d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
+                                                        </svg></span>
+                                                </div>
+                                            </div>
+                                            <ul class="sub_multi_select" *ngIf="openvila">
+                                                <li class="checkbox_slot"><label
+                                                        class="y2_checkbox datalist_checkbox"><input type="checkbox"
+                                                            class="checkbox" value="5" [(ngModel)]="checkedVilas[0]"
+                                                            name="vila"> <span class="checkmark"></span>
+                                                        <span class="cb_text">
+                                                            פרטי/קוטג'
+                                                        </span></label></li>
+                                                <li class="checkbox_slot"><label
+                                                        class="y2_checkbox datalist_checkbox"><input type="checkbox"
+                                                            class="checkbox" value="39" [(ngModel)]="checkedVilas[1]"
+                                                            name="two-familys">
+                                                        <span class="checkmark"></span>
+                                                        <span class="cb_text">
+                                                            דו משפחתי
+                                                        </span></label></li>
+                                                <li class="checkbox_slot"><label
+                                                        class="y2_checkbox datalist_checkbox"><input type="checkbox"
+                                                            class="checkbox" value="32" [(ngModel)]="checkedVilas[2]"
+                                                            name="farm"> <span class="checkmark"></span>
+                                                        <span class="cb_text">
+                                                            משק חקלאי/נחלה
+                                                        </span></label></li>
+                                                <li class="checkbox_slot"><label
+                                                        class="y2_checkbox datalist_checkbox"><input type="checkbox"
+                                                            class="checkbox" value="55" [(ngModel)]="checkedVilas[3]"
+                                                            name="farm-factory">
+                                                        <span class="checkmark"></span>
+                                                        <span class="cb_text">
+                                                            משק עזר
+                                                        </span></label></li>
+                                            </ul>
+                                        </li>
+                                        <li class="checkbox_slot">
+                                            <div class="checkBox-element">
+                                                <label class="y2_checkbox datalist_checkbox">
+                                                    <input type="checkbox" class="checkbox" value="false"
+                                                        [(ngModel)]="elser" (click)="onOthers()" name="else"> <span
+                                                        class="checkmark"></span>
+                                                    <span class="cb_text">
+                                                        אחר
+                                                        <!---->
+                                                    </span></label>
+                                                <div (click)="openelse=!openelse">
+                                                    <span *ngIf="!openelse" class="arrow-icon"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                            viewBox="0 0 24 24">
+                                                            <path
+                                                                d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+                                                        </svg></span>
+                                                    <span class="arrow-icon" *ngIf="openelse"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                            viewBox="0 0 24 24">
+                                                            <path
+                                                                d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
+                                                        </svg></span>
+                                                </div>
+                                            </div>
+                                            <ul class="sub_multi_select" *ngIf="openelse">
+                                                <li class="checkbox_slot"><label
+                                                        class="y2_checkbox datalist_checkbox"><input type="checkbox"
+                                                            class="checkbox" value="33" [(ngModel)]="checkedOthers[0]"
+                                                            name="filds"> <span class="checkmark"></span>
+                                                        <span class="cb_text">
+                                                            מגרשים
+                                                        </span></label></li>
+                                                <li class="checkbox_slot"><label
+                                                        class="y2_checkbox datalist_checkbox"><input type="checkbox"
+                                                            class="checkbox" value="61" [(ngModel)]="checkedOthers[1]"
+                                                            name="protecting-housing"> <span class="checkmark"></span>
+                                                        <span class="cb_text">
+                                                            דיור מוגן
+                                                        </span></label></li>
+                                                <li class="checkbox_slot"><label
+                                                        class="y2_checkbox datalist_checkbox"><input type="checkbox"
+                                                            class="checkbox" value="44" [(ngModel)]="checkedOthers[2]"
+                                                            name="building"> <span class="checkmark"></span>
+                                                        <span class="cb_text">
+                                                            בניין מגורים
+                                                        </span></label></li>
+                                                <li class="checkbox_slot"><label
+                                                        class="y2_checkbox datalist_checkbox"><input type="checkbox"
+                                                            class="checkbox" value="45" [(ngModel)]="checkedOthers[3]"
+                                                            name="warehouse"> <span class="checkmark"></span>
+                                                        <span class="cb_text">
+                                                            מחסן
+                                                        </span></label></li>
+                                                <li class="checkbox_slot"><label
+                                                        class="y2_checkbox datalist_checkbox"><input type="checkbox"
+                                                            class="checkbox" value="30" [(ngModel)]="checkedOthers[4]"
+                                                            name="garag"> <span class="checkmark"></span>
+                                                        <span class="cb_text">
+                                                            חניה
+                                                        </span></label></li>
+                                                <li class="checkbox_slot"><label
+                                                        class="y2_checkbox datalist_checkbox"><input type="checkbox"
+                                                            class="checkbox" value="50" [(ngModel)]="checkedOthers[5]"
+                                                            name="group-buyers">
+                                                        <span class="checkmark"></span>
+                                                        <span class="cb_text">
+                                                            קב' רכישה/ זכות לנכס
+                                                        </span></label></li>
+                                                <li class="checkbox_slot"><label
+                                                        class="y2_checkbox datalist_checkbox"><input type="checkbox"
+                                                            class="checkbox" value="41" [(ngModel)]="checkedOthers[6]"
+                                                            name="general"> <span class="checkmark"></span>
+                                                        <span class="cb_text">
+                                                            כללי
+                                                        </span></label></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <div class="drop_footer"><button type="submit" class="y2_btn tertiary">
+                                            <!----> <span class="button_content">
+                                                <!----> <span class="button_text">בחר</span>
+                                            </span>
+                                        </button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </form>
+        </div>
+        <div class="rooms">
+            <label>חדרים</label>
+            <button class="how-many-rooms" (click)="openRooms=!openRooms">{{message}}</button>
+            <div class="room-amount" *ngIf="openRooms">
+                <button class="from-amount" (click)="onFrom=!onFrom">{{roomsFrom}}</button>
+                <button class="to-amount" (click)="onTo=!onTo">{{roomsTo}}</button>
+            </div>
+            <div class="choose-room">
+            <div class="from-numbers" *ngIf="onFrom&&openRooms">
+                <div class="number-of-rooms" *ngFor="let number of rooms" (click)="onSelectFromNumber(number)">
+                    {{number}}</div>
+            </div>
+            <div class="to-numbers" *ngIf="onTo&&openRooms">
+                <div class="number-of-rooms" *ngFor="let number of rooms" (click)="onSelectToNumber(number)">
+                    {{number}}</div>
+            </div>
+            </div>
+        </div>
+
+        <div class="price">
+            <label>מחיר</label>
+            <div class="input-price" style="display: flex; align-items: center;">
+                <input type="text" class="from-price" #mini>
+                <p>-</p>
+                <input type="text" class="to-price" #maxi>
+            </div>
+        </div>
+        <div class="advanced-search">
+            <button class="advanced-search-button" (click)="onAdvancedSearch()"><span><img
+                        src="data:image/png;base64,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"
+                        alt="" style="width: 15px; height: 15px;"></span>
+                חיפוש מתקדם</button>
+
+        </div>
+        <div class="to-serch">
+            <button class="search-button" (click)="onSearch()">חיפוש</button>
+        </div>
+    </div>
+</form>
+<app-advanced-search [searchInput]="searchInput" 
+[assetsType]="assetTypesSearchArray"
+[roomFrom]="roomsFrom" [roomTo]="roomsTo" [minimum]="min" [maximum]="max"
+*ngIf="advancedSearchOpen"></app-advanced-search>

@@ -1,0 +1,151 @@
+<div class="advanced_search_content"><span class="advanced_search_title">מאפייני דירה</span>
+    <ul class="advanced_search_row">
+        <li class="advanced_search_col advance_checkbox"><label class="y2_checkbox search_checkbox" name="pandorDoors"
+                category="realestate" sub-category="forsale"><input type="checkbox" class="checkbox" value="false"
+                [(ngModel)]="subType[0]">
+                <span class="checkmark"></span> <span class="cb_text">
+                    דלתות פנדור
+                </span></label></li>
+        <li class="advanced_search_col advance_checkbox"><label class="y2_checkbox search_checkbox" name="parking"
+                category="realestate" sub-category="forsale"><input type="checkbox" class="checkbox" value="false"
+                [(ngModel)]="subType[1]">
+                <span class="checkmark"></span> <span class="cb_text">
+                    חניה
+                </span></label></li>
+        <li class="advanced_search_col advance_checkbox"><label class="y2_checkbox search_checkbox" name="elevator"
+                category="realestate" sub-category="forsale"><input type="checkbox" class="checkbox" value="false"
+                [(ngModel)]="subType[2]">
+                <span class="checkmark"></span> <span class="cb_text">
+                    מעלית
+                </span></label></li>
+        <li class="advanced_search_col advance_checkbox"><label class="y2_checkbox search_checkbox"
+                name="airConditioner" category="realestate" sub-category="forsale"><input type="checkbox"
+                    class="checkbox" value="false"
+                    [(ngModel)]="subType[3]"> <span class="checkmark"></span> <span class="cb_text">
+                    מיזוג
+                </span></label></li>
+        <li class="advanced_search_col advance_checkbox"><label class="y2_checkbox search_checkbox" name="balcony"
+                category="realestate" sub-category="forsale"><input type="checkbox" class="checkbox" value="false"
+                [(ngModel)]="subType[4]">
+                <span class="checkmark"></span> <span class="cb_text">
+                    מרפסת
+                </span></label></li>
+        <li class="advanced_search_col advance_checkbox"><label class="y2_checkbox search_checkbox" name="bars"
+                category="realestate" sub-category="forsale"><input type="checkbox" class="checkbox" value="false"
+                [(ngModel)]="subType[5]">
+                <span class="checkmark"></span> <span class="cb_text">
+                    סורגים
+                </span></label></li>
+        <li class="advanced_search_col advance_checkbox"><label class="y2_checkbox search_checkbox" name="warhouse"
+                category="realestate" sub-category="forsale"><input type="checkbox" class="checkbox" value="false"
+                [(ngModel)]="subType[6]">
+                <span class="checkmark"></span> <span class="cb_text">
+                    מחסן
+                </span></label></li>
+        <li class="advanced_search_col advance_checkbox"><label class="y2_checkbox search_checkbox" name="accessibility"
+                category="realestate" sub-category="forsale"><input type="checkbox" class="checkbox" value="false"
+                [(ngModel)]="subType[7]">
+                <span class="checkmark"></span> <span class="cb_text">
+                    גישה לנכים
+                </span></label></li>
+        <li class="advanced_search_col advance_checkbox"><label class="y2_checkbox search_checkbox" name="renovated"
+                category="realestate" sub-category="forsale"><input type="checkbox" class="checkbox" value="false"
+                [(ngModel)]="subType[8]">
+                <span class="checkmark"></span> <span class="cb_text">
+                    משופצת
+                </span></label></li>
+        <li class="advanced_search_col advance_checkbox"><label class="y2_checkbox search_checkbox" name="furniture"
+                category="realestate" sub-category="forsale"><input type="checkbox" class="checkbox" value="false"
+                [(ngModel)]="subType[9]">
+                <span class="checkmark"></span> <span class="cb_text">
+                    מרוהטת
+                </span></label></li>
+        <li class="advanced_search_col advance_checkbox"><label class="y2_checkbox search_checkbox"
+                name="asset_exclusive" category="realestate" sub-category="forsale"><input type="checkbox"
+                    class="checkbox" value="false"  [(ngModel)]="subType[10]"> <span class="checkmark"></span> <span class="cb_text">
+                    בבלעדיות
+                </span></label></li>
+    </ul>
+    <ul class="advanced_search_row middele">
+        <div class="rooms">
+            <label>קומה</label>
+            <div class="room-amount">
+                <button class="from-amount" (click)="openFromFloor()">{{roomsFrom}}</button>
+                <span class="seperaiter"></span>
+                <button class="to-amount" (click)="openToFloor()">{{roomsTo}}</button>
+
+                <div class="from-numbers" *ngIf="openFloorFrom">
+                    <div class="number-of-rooms" *ngFor="let number of FromfloorNext" (click)="onSelectFromNumber(number)">
+                        {{number}}</div>
+                </div>
+                <div class="to-numbers" *ngIf="openFloorTo">
+                    <div class="number-of-rooms" *ngFor="let number of Tofloor" (click)="onSelectToNumber(number)">
+                        {{number}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="apartment-size">
+            <label>גודל דירה ב(מ'ר)</label>
+            <div class="size">
+                <input class="from-size" placeholder="מ-" #minSize>
+                <span class="seperaiter"></span>
+                <input class="to-size" placeholder="עד-" #maxSize>
+            </div>
+        </div>
+        <li class="advanced_search_col col_x5">
+            <div data-v-0336bfa6="" class="search_calendar_immediate" category="realestate" sub-category="forsale">
+                <label data-v-0336bfa6="" class="search_calendar"><span data-v-0336bfa6="">תאריך כניסה</span>
+                    <div data-v-084e94ff="" data-v-0336bfa6="" class="vdp-datepicker y2_calendar calendar_input rtl"
+                        id="EnterDate">
+                        <div data-v-084e94ff="" class="" (click)="openCalendar()" >
+                            <!----> <input data-v-084e94ff="" type="text" placeholder="החל מ- הזינו תאריך"
+                                readonly="readonly" #date>
+                        </div>
+                    </div>
+                </label> <label data-v-0336bfa6="" class="y2_checkbox search_checkbox" name="EnterDate"><input
+                        type="checkbox" class="checkbox" value="false"> <span class="checkmark"></span> <span
+                        class="cb_text">
+                        כניסה מיידית
+                    </span></label></div>
+        </li>
+    </ul>
+    <ul class="advanced_search_row">
+        <li class="advanced_search_col advance_text">
+            <div data-v-7e764c96="" class="y2_text search_input" category="realestate" sub-category="forsale"><label
+                    data-v-7e764c96="" class="y2_input">
+                    <!----> <span data-v-7e764c96="" class=""></span> <span data-v-7e764c96="" class="slot-holder">
+                        חיפוש חופשי
+                    </span> <span data-v-7e764c96="" class="input-container pt-5"><span data-v-7e764c96=""
+                            class="input-icon" style="color: rgb(0, 0, 0); display: none;"></span> <input
+                            data-v-7e764c96="" type="text" name="comment" autocomplete="off" placeholder=""
+                            data-test-id="searchInput_comment" class="text_input"></span>
+                </label>
+                <!---->
+            </div>
+        </li>
+        <li class="advanced_search_col aligned_checkbox">
+            <div class="disclaimer_container" category="realestate" sub-category="forsale"><label
+                    class="y2_checkbox disabled" name="moshavimKibutzim"><input type="checkbox" class="checkbox"
+                        value="false"> <span class="checkmark"></span> <span class="cb_text">
+                        הצג רק מושבים וקיבוצים
+                    </span></label> <i class="y2i_question_mark"></i>
+                <div data-v-7afa153c="" class="y2_tooltip_container">
+                    <div data-v-7afa153c="" class="y2_tooltip"><span data-v-7afa153c="" class="content">בחיפוש לפי מחוז
+                            / איזור ניתן לחפש במושבים וקיבוצים באיזור הנבחר</span> <button data-v-7afa153c=""
+                            type="button" class="close_button"><i data-v-7afa153c="" class="y2i_close"></i></button>
+                        <!---->
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <ul class="advanced_search_row advanced_search_buttons footer">
+        <li class="submit_button_wrap"><button type="submit" class="y2_btn primary search_button submit_button"
+            (click)="onSearch()">
+                <!----> <span class="button_content">
+                    <!----> <span class="button_text">חיפוש</span>
+                </span>
+            </button></li>
+        <li class="reset_button_wrap"><button type="reset" class="y2_link reset_button">נקה</button></li>
+    </ul>
+</div>

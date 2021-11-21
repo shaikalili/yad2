@@ -1,0 +1,81 @@
+*{
+    font-family: 'Rubik',sans-serif;
+    color: #363636;
+}
+.adds {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.add-container{
+    background: transparent;
+    text-align: center;
+    min-height: 62px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.image-container {
+    max-width: 100%;
+    background-color: #FFFFFF;
+    min-height: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.add-desc{
+    line-height: 17px;
+    margin-top: 3px;
+    font-weight: noraml;
+    color: #363636;
+    font-size: 14px;
+    margin: 0;
+    direction: rtl;
+}
+.add-desc:hover{
+    color: #ff7100;
+    cursor: pointer;
+}
+.desc:hover{
+    color: #ff7100;
+}
+
+.feed-tittle{
+    display: flex;
+    justify-content: space-between;
+    padding:20px 10px;
+}
+.real-estait{
+    font-size: 1.25rem;
+}
+.real-estait_counter{
+    color: #999;
+    font-size: 0.875rem;
+}
+.adds-for-sale{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.image-for-sale{
+    width: 160px;
+    height: 130px;
+    position: relative;
+}
+.image-for-sale img{
+    width:160px;
+    height: 100px;
+    object-fit: cover;
+    transform: translateZ(0);
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+}

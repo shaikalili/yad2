@@ -1,0 +1,48 @@
+<body>
+    <div class="content">
+        <div class="right-content">
+            <div class="add">
+                <img src="https://tpc.googlesyndication.com/simgad/5365306873084562564" style="height: 60px;" alt="">
+            </div>
+            <div class="slideshow-container" (mouseover)="changeText=true" (mouseout)="changeText=false">
+                <div class="fade">
+                    <img src="{{imageToShow}}">
+                    <div class="text">תמונה {{photoNumber}} מתוך {{asset.images.length+1}} </div>
+                </div>
+                <a class="prev" (click)="next(-1)" *ngIf="slideIndex>=0"> &#10095;</a>
+                <a class="next" (click)="next(1)" *ngIf="slideIndex!==asset.images.length-1">&#10094;</a>
+                <div class="fullScreen" [ngStyle]="{display: changeStyle()}" (click)="toFullScreen(photoNumber)">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24">
+                            <path
+                                d="M24 10.999v-10.999h-11l3.379 3.379-13.001 13-3.378-3.378v10.999h11l-3.379-3.379 13.001-13z" />
+                        </svg>
+                    </span>
+                    <span>מסך מלא</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="left-content">
+            <div class="back">
+                <button class="back-to-page" (click)="back()"
+                > <span class="x">x</span><span>בחזרה למודעה</span></button>
+            </div>
+            <div class="title"><span >
+                פרוייקטים חדשים באיזור
+            </span></div>
+            <div class="adds">
+
+                <div class="add">
+                    <img src="https://pics.yad2.co.il/Pics/2019/10/20191023102141.jpg" alt="">
+                </div>
+                <div class="add">
+                    <img src="https://pics.yad2.co.il/Pics/2017/11/20171108175438.jpg" alt="">
+                </div>
+                <div class="add">
+                    <img src="https://pics.yad2.co.il/Pics/2020/07/20200707120311224.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

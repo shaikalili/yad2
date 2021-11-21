@@ -1,0 +1,19 @@
+
+<div class="sort-Assets">
+    <div class="sort">
+        <label> מיין לפי</label>
+        <button class="to-sort" (click)="sortingOpen=!sortingOpen">{{sortingSelect}}</button>
+        <div class="sorting-by-conteinar" *ngIf="sortingOpen">
+            <div class="sorting-by" *ngFor="let by of sorting" (click)="onSelectSorting(by)"> {{by}}
+            </div>
+        </div>
+    </div>
+    <div data-v-375cfe5b="" class="buttons_group"><label data-v-375cfe5b="">הצג מודעות</label> <button
+            data-v-375cfe5b="" id="price_only" class="to-sort button-high"><i data-v-375cfe5b="" class="y2i_price"></i> <span
+                data-v-375cfe5b="">עם מחיר &#8362;</span></button> <button data-v-375cfe5b="" class="img_only to-sort button-high"><i
+                data-v-375cfe5b="" class="y2i_img"></i> <span data-v-375cfe5b="">עם תמונה</span>
+                <svg class="pic" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 8.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5zm9 .5l-2.519 4-2.481-1.96-4 5.96h14l-5-8zm8-4v14h-20v-14h20zm2-2h-24v18h24v-18z"/></svg></button></div>
+</div>
+<div class="assets">
+    <app-neches *ngFor="let asset of assets" [asset]="asset"></app-neches>
+</div>

@@ -1,0 +1,454 @@
+*{
+    font-family: 'Rubik',sans-serif;
+}
+.search-form{
+    border-radius: 4px;
+    position: relative;
+    padding: 20px;
+    width: 90%;
+    background-color: #fff;
+    box-shadow: 2px 2px 6px 2px rgb(0 0 0 / 10%);
+    z-index: 10;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.headline{
+  font-size: 18px;
+    font-weight: 500;
+}
+.header span{
+    color: #ff7100;
+    border-bottom: 1.5px dotted #ff7100;
+}
+.y2_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #ff7100;
+   background-color: white;
+   font-family: inherit;
+   width: 215px;
+   height: 30px;
+}
+@media screen and (max-width: 880px)
+{
+.searchbar_field_drop .field_label {
+    font-size: 1rem;
+}
+}
+.searchbar_field_drop .field_label {
+    display: block;
+    color: #363636;
+    text-align: right;
+    font-size: .875rem;
+}
+.searchbar_field_drop .field_drop_button {
+    min-width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: .875rem;
+    line-height: 1.0625rem;
+    color: #999;
+    background-color: #fff;
+    margin-top: 5px;
+    padding: 0 10px 0 5px;
+    position: relative;
+}
+.searchbar_field_drop .field_drop_button span {
+    flex-grow: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: calc(100% - 25px);
+    text-align: right;
+
+}
+.search_drop_multi_group_checkbox .y2_mobile_multi_select .main_all {
+    border-bottom: 1px solid #eee;
+}
+.search_drop_multi_group_checkbox .dropdown_content {
+    min-width: 280px;
+}
+.y2_dropdown .dropdown_content {
+    position: absolute;
+    top: 100%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    z-index: 2;
+}
+.y2_mobile_multi_select .checkbox_slot[data-v-28f407f8] {
+    padding: 0 20px;
+}
+.y2_checkbox {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 3px 5px;
+    color: #363636;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.y2_mobile_multi_select .checkbox_slot .y2_checkbox[data-v-28f407f8] {
+    width: calc(100% - 50px);
+    margin: 0;
+    min-height: 50px;
+    position: relative;
+}
+.search_drop_multi_group_checkbox .dropdown_content .y2_checkbox {
+    min-width: 200px;
+}
+.y2_checkbox .checkmark {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    height: 1em;
+    width: 1em;
+    min-width: 1em;
+    background-color: #fff;
+    border: 1px solid #363636;
+    border-radius: 2px;
+}
+.y2_checkbox .checkmark-orange {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    height: 1em;
+    width: 1em;
+    min-width: 1em;
+    border-radius: 2px;
+    background-color: #d86000;
+    border: 1px solid #d86000;
+}
+.y2_checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+.y2_checkbox:hover input:checked~.checkmark {
+    background-color: #d86000;
+    border: 1px solid #d86000;
+}
+.y2_checkbox:hover input~.checkmark {
+    border: 1px solid #ff7100;
+}
+/*.asset{
+    position: relative;
+    cursor: pointer;
+}
+.asset input{
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 15px;
+        width:200px;
+}
+.checkmark {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    height: 1em;
+    width: 1em;
+    min-width: 1em;
+    background-color: #fff;
+    border: 1px solid #363636;
+    border-radius: 2px;
+}
+.asset:hover input ~ .checkmark{
+    border: 1px solid #d86000;  
+}
+.asset input:checked ~.checkmark {
+   background-color: #ff7100;
+    border: 1px solid #ff7100;
+}
+
+  .asset .checkmark:after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 0px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }*/
+.y2_checkbox input:checked~.checkmark {
+    background-color: #ff7100;
+    border: 1px solid #ff7100;
+}
+.y2_checkbox input:checked~.checkmark:after {
+    display: inline;
+}
+.y2_checkbox .checkmark:after, .y2_checkbox .checkmark-orange:after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 0px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.search_drop_multi_group_checkbox .drop_footer .y2_btn {
+    background-color: #fff;
+    border: none;
+}
+.y2_btn.tertiary {
+    font-weight: 500;
+    background-color: #fff1e5;
+    color: #ff7100;
+    border-color: #fff1e5;
+}
+.search_drop_multi_group_checkbox .drop_footer {
+    border-top: 1px solid #eee;
+    text-align: left;
+}
+.search_drop_range_select[data-v-7678bac1] {
+    position: relative;
+}
+.searchbar_field_drop {
+    width: 100%;
+}
+@media screen and (max-width: 880px)
+{
+.searchbar_field_drop .field_label {
+    font-size: 1rem;
+}
+}
+.searchbar_field_drop .field_label {
+    display: block;
+    color: #363636;
+    text-align: right;
+    font-size: 1rem;
+}
+.how-many-rooms{
+    min-width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: .875rem;
+    line-height: 1.0625rem;
+    color: #999;
+    background-color: #fff;
+    margin-top: 5px;
+    padding: 0 10px 0 5px;
+    cursor: pointer;
+}
+.room-amount{
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 10%);
+    box-sizing: border-box;
+    min-width: 180px;
+    min-height: 80px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 80px;
+    left: -40px;
+    z-index: 2;
+}
+.from-amount, .to-amount{
+    font-family: 'Rubik',sans-serif;
+    font-size: 1rem;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 30px;
+    margin-top: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.choose-room{
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    position: absolute;
+    top: 150px;
+}
+.from-numbers, .to-numbers{
+    width: 40px;
+    height: 300px;
+    border: 1px solid black;
+    background-color: #fff;
+}
+.form-input{
+display: grid;
+grid-template-columns: 15% 17.5% 17.5% 20% 20% 10%;
+align-items: flex-end;
+justify-content: end;
+padding: 10px;
+}
+
+.city-search,.assests-type,.rooms,.price,.advanced-search,.to-search{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-self:center;
+}
+li{
+    list-style-type:none;
+}
+.from-price,.to-price{
+    width: 45px;
+    height: 35px;
+}
+.advanced-search{
+
+}
+.advanced-search-button{
+    padding: 11px 5px;
+    font-family: 'Rubik', sans-serif;
+    direction: rtl;
+    color: #363636;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+.to-serch{
+justify-self: center;
+}
+.search-button{
+    padding: 11px 5px;
+    font-family: 'Rubik', sans-serif;
+    direction: rtl;
+    background-color: #ff7100;
+    color: white;
+    font-weight: 500;
+    box-sizing: border-box;
+    font-size: 1rem; 
+    border: none;
+    cursor: pointer;
+}
+.search-card{
+    width: 100%;
+    white-space: nowrap;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: 0;
+    max-height: unset;
+    overflow-y: unset;
+    position: absolute;
+    top: 100%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    z-index: 10;
+    display: flex;
+    max-height: 400px;
+    overflow-y: hidden;
+    flex-direction: column;
+}
+.search-card label{
+    font-weight: 700;
+    background-color: #f4f4f4;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 10px;
+}
+
+.mini-title{
+    color: #989898;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 10px;
+}
+.street-array{
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    padding: 11px 10px;
+}
+.street-array:hover{
+    background-color: #eee;
+}
+.field_content{
+    background-color: #fff;
+    z-index: 10;
+}
+.arrow-icon{
+    stroke: transparent;
+    fill: #363636;
+    position: absolute;
+    left: 5px;
+    top: 12px;
+}
+.checkBox-element{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+@media(max-width:750px){
+  .form-input{
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  .room-amount{
+      left: 0;
+  }
+  .how-many-rooms{
+      min-width: 60px;
+  }
+  .advanced-search-button{
+      min-width: 125px;
+  }
+  .from-price, .to-price{
+      width: 25px;
+     height: 45px;
+  }
+  .dropdown_content{
+      left:-20px;
+  }
+}   
+@media(max-width:400px){
+  .form-input{
+      display: flex;
+      flex-wrap: wrap;
+  }
+}
+
+
+
+
+

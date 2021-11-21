@@ -1,0 +1,30 @@
+.image{
+    width: 100%;
+    height: 100%;
+    background-color: #363636;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+img{
+    width: 90%;
+    height: 90%;
+    object-fit:cover;
+}
+.out{
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background-color: #636161;
+    color: #fff;
+    position: absolute;
+    left: 30px;
+    top:30px;
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+}

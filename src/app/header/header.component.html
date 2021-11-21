@@ -1,0 +1,669 @@
+<div class="header">
+    <button class="hamburger hamburger--collapse" type="button" (click)="sideNavOpen=!sideNavOpen">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    <div *ngIf="sideNavOpen" id="sideNav" tabindex="0" class="y2-sidenav mobile_menu y2-right y2-fixed y2-active"
+        data-v-10a4c762="" data-v-cb63e9fc="">
+        <div class="y2-sidenav-content" data-v-10a4c762="">
+            <nav id="mainMobileMenu" class="menu_container" data-v-10a4c762=""><button aria-label="סגור תפריט ראשי"
+                    class="close_button" data-v-10a4c762="" (click)="sideNavOpen=!sideNavOpen">x</button>
+                <div data-v-79f92e8a="" class="mobile_menu_top_section" data-v-10a4c762="">
+                    <div data-v-79f92e8a="" class="personal_area_section">
+                        <!----> <a data-v-79f92e8a="" class="login"><span data-v-79f92e8a=""
+                                class="private_zone_icon_wrapper"><i data-v-79f92e8a=""
+                                    class="private_zone_icon icon y2i_user">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2c3.032 0 5.5 2.467 5.5 5.5 0 1.458-.483 3.196-3.248 5.59 4.111 1.961 6.602 5.253 7.482 8.909h-19.486c.955-4.188 4.005-7.399 7.519-8.889-1.601-1.287-3.267-3.323-3.267-5.61 0-3.033 2.468-5.5 5.5-5.5zm0-2c-4.142 0-7.5 3.357-7.5 7.5 0 2.012.797 3.834 2.086 5.182-5.03 3.009-6.586 8.501-6.586 11.318h24c0-2.791-1.657-8.28-6.59-11.314 1.292-1.348 2.09-3.172 2.09-5.186 0-4.143-3.358-7.5-7.5-7.5z" />
+                                        </svg></span>
+                                </i>
+                                התחברות
+                            </span></a>
+                    </div> <a data-v-79f92e8a="" target="_self" href="//personal.yad2.co.il/publish"
+                        class="externalLink publish_ad">פרסום מודעה</a>
+                    <div data-v-79f92e8a="" class="link_container">
+                        <!----> <button data-v-44c5dc42="" data-v-79f92e8a="" class="my_alerts_link link"><i
+                                data-v-79f92e8a="" data-v-44c5dc42="" class="y2i_notification">
+                                <span><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                                        clip-rule="evenodd">
+                                        <path
+                                            d="M1 20v-2.946c1.993-.656 2.575-2.158 3.668-6.077.897-3.218 1.891-6.784 4.873-8.023-.027-.147-.041-.299-.041-.454 0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5c0 .156-.014.309-.042.458 2.987 1.244 3.984 4.813 4.884 8.033 1.103 3.95 1.697 5.423 3.658 6.062v2.947h-7c0 2.208-1.792 4-4 4s-4-1.792-4-4h-7zm14 0h-6c0 1.656 1.344 3 3 3s3-1.344 3-3zm-13-1h20v-1.241c-2.062-.918-2.82-3.633-3.621-6.498-1.066-3.814-2.167-7.758-6.379-7.761-4.21 0-5.308 3.937-6.369 7.745-.8 2.872-1.559 5.593-3.631 6.514v1.241zm11.492-16.345l.008-.155c0-.828-.672-1.5-1.5-1.5s-1.5.672-1.5 1.5l.008.152c.455-.099.949-.152 1.487-.152.542 0 1.039.054 1.497.155z" />
+                                    </svg></span>
+                            </i> <span data-v-79f92e8a="" data-v-44c5dc42="" class="icon_label">התראות שלי</span> <span
+                                data-v-f542d692="" data-v-79f92e8a="" class="item-label" id="label-customize"
+                                data-v-44c5dc42=""></span></button> <button data-v-79f92e8a=""
+                            class="favorites-link link"><i data-v-79f92e8a="" class="y2i_favorite">
+                                <span><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                                        clip-rule="evenodd">
+                                        <path
+                                            d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
+                                    </svg></span>
+                            </i> <span data-v-79f92e8a="" class="icon_label">מודעות שאהבתי</span></button> <a
+                            data-v-79f92e8a="" href="/latestsearches"
+                            class="internalLink link latest-searches-link prefetched" target="_self"><i
+                                data-v-79f92e8a="" class="y2i_search"><span data-v-79f92e8a=""
+                                    class="global_icon_count">
+                                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                                        clip-rule="evenodd">
+                                        <path
+                                            d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z" />
+                                    </svg>
+                                </span></i> <span data-v-79f92e8a="" class="icon_label">חיפושים אחרונים</span></a> <a
+                            data-v-79f92e8a="" href="/vehicles/compare"
+                            class="internalLink link car-compare-link prefetched" target="_self"><i data-v-79f92e8a=""
+                                class="y2i_compare_vehicles">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M7 13.5c0-.828-.672-1.5-1.5-1.5s-1.5.672-1.5 1.5.672 1.5 1.5 1.5 1.5-.672 1.5-1.5zm9 1c0-.276-.224-.5-.5-.5h-7c-.276 0-.5.224-.5.5s.224.5.5.5h7c.276 0 .5-.224.5-.5zm4-1c0-.828-.672-1.5-1.5-1.5s-1.5.672-1.5 1.5.672 1.5 1.5 1.5 1.5-.672 1.5-1.5zm-17.298-6.5h-2.202c-.276 0-.5.224-.5.5v.511c0 .793.926.989 1.616.989l1.086-2zm19.318 3.168c-.761-1.413-1.699-3.17-2.684-4.812-.786-1.312-1.37-1.938-2.751-2.187-1.395-.25-2.681-.347-4.585-.347s-3.19.097-4.585.347c-1.381.248-1.965.875-2.751 2.187-.981 1.637-1.913 3.382-2.684 4.812-.687 1.273-.98 2.412-.98 3.806 0 1.318.42 2.415 1 3.817v2.209c0 .552.448 1 1 1h1.5c.552 0 1-.448 1-1v-1h13v1c0 .552.448 1 1 1h1.5c.552 0 1-.448 1-1v-2.209c.58-1.403 1-2.499 1-3.817 0-1.394-.293-2.533-.98-3.806zm-15.641-3.784c.67-1.117.852-1.149 1.39-1.246 1.268-.227 2.455-.316 4.231-.316s2.963.088 4.231.316c.538.097.72.129 1.39 1.246.408.681.81 1.388 1.195 2.081-1.456.22-4.02.535-6.816.535-3.048 0-5.517-.336-6.805-.555.382-.686.779-1.386 1.184-2.061zm11.595 10.616h-11.948c-1.671 0-3.026-1.354-3.026-3.026 0-1.641.506-2.421 1.184-3.678 1.041.205 3.967.704 7.816.704 3.481 0 6.561-.455 7.834-.672.664 1.231 1.166 2.01 1.166 3.646 0 1.672-1.355 3.026-3.026 3.026zm5.526-10c.276 0 .5.224.5.5v.511c0 .793-.926.989-1.616.989l-1.086-2h2.202z" />
+                                    </svg></span>
+                            </i> <span data-v-79f92e8a="" class="icon_label">השוואת רכבים</span></a>
+                    </div>
+                </div>
+                <div class="search_links_section" data-v-10a4c762=""><span class="title" data-v-10a4c762="">חיפוש מהיר
+                        באתר</span>
+                    <ul data-v-10a4c762="">
+                        <li class="search_link" data-v-10a4c762=""><a href="/search/realestate/forsale" target="_self"
+                                class="internalLink prefetched" data-v-10a4c762="">
+                                <!----> <i class="y2i_side-menu_-realestate"></i> <span>נדל"ן</span>
+                                <!---->
+                            </a></li>
+                        <li class="search_link" data-v-10a4c762=""><a href="/search/vehicles/private-cars"
+                                target="_self" class="internalLink prefetched" data-v-10a4c762="">
+                                <!----> <i class="y2i_side-menu_-vehicle"></i> <span>רכב</span>
+                                <!---->
+                            </a></li>
+                        <li class="search_link" data-v-10a4c762=""><a href="/search/products/all" target="_self"
+                                class="internalLink prefetched" data-v-10a4c762="">
+                                <!----> <i class="y2i_side-menu_-2ndhand"></i> <span>יד שנייה</span>
+                                <!---->
+                            </a></li>
+                        <li class="search_link" data-v-10a4c762=""><a href="/commercial" target="_self"
+                                class="internalLink prefetched" data-v-10a4c762="">
+                                <!----> <i class="y2i_side-menu_-business"></i> <span>עסקים ומסחרי</span>
+                                <!---->
+                            </a></li>
+                        <li class="search_link" data-v-10a4c762=""><a target="_blank"
+                                href="https://www.drushim.co.il/?utm_source=yad2top" class="externalLink"
+                                data-v-10a4c762="">
+                                <!----> <i class="y2i_side-menu_-drushim"></i> <span>דרושים IL</span>
+                                <!---->
+                            </a></li>
+                        <li class="search_link" data-v-10a4c762=""><a href="/search/pets/all" target="_self"
+                                class="internalLink prefetched" data-v-10a4c762="">
+                                <!----> <i class="y2i_side-menu_-pets"></i> <span>חיות מחמד</span>
+                                <!---->
+                            </a></li>
+                        <li class="search_link" data-v-10a4c762=""><a href="/search/recreation/all" target="_self"
+                                class="internalLink prefetched" data-v-10a4c762="">
+                                <!----> <i class="y2i_side-menu_-vacation"></i> <span>תיירות ונופש</span>
+                                <!---->
+                            </a></li>
+                        <li class="search_link" data-v-10a4c762=""><a href="/search/private-teachers/all" target="_self"
+                                class="internalLink prefetched" data-v-10a4c762="">
+                                <!----> <i class="y2i_side-menu_-studies"></i> <span>לימודים</span>
+                                <!---->
+                            </a></li>
+                        <!---->
+                    </ul>
+                </div>
+                <div class="feed_links_section" data-v-10a4c762=""><span class="title" data-v-10a4c762="">ניווט לפי
+                        קטגוריות</span>
+                    <ul class="show_content_mobile_menu_links_list show_content_list" data-v-5504ccba=""
+                        data-v-10a4c762="">
+                        <li data-v-5504ccba="">
+                            <div class="show_content dropdown_content" data-v-212a6bed="" data-v-5504ccba=""><button
+                                    class="content_header" data-v-212a6bed=""><span class="title"
+                                        data-v-212a6bed="">נדל״ן</span> <i class="y2i_arrow"
+                                        data-v-212a6bed=""></i></button>
+                                <div class="content" style="display:none;" data-v-212a6bed="">
+                                    <ul data-v-5504ccba="">
+                                        <li data-v-5504ccba=""><a href="/realestate/forsale" target="_self"
+                                                class="internalLink link nuxt-link-exact-active nuxt-link-active prefetched"
+                                                data-v-5504ccba="">דירות למכירה
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/realestate/rent" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">דירות להשכרה
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/search/realestate/roommates" target="_self"
+                                                class="internalLink link" data-v-5504ccba="">דירות שותפים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/realestate/commercial" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">נדל"ן מסחרי
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/realestate/forsale/map" target="_self"
+                                                class="internalLink link" data-v-5504ccba="">חיפוש נכסים על גבי מפה
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/realestate/kones?yad2_source=nadlan_kubia"
+                                                target="_self" class="internalLink link" data-v-5504ccba="">כונס נכסים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_self" href="https://homeprices.yad2.co.il/"
+                                                class="externalLink link" data-v-5504ccba="">מדד הנדל"ן
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a
+                                                href="/realestate/newprojects?site=_inres_x2_py2_4401_hp_MainMenu"
+                                                target="_self" class="internalLink link" data-v-5504ccba=""> יד1 דירות
+                                                חדשות
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_self" href="https://yadata.yad2.co.il/"
+                                                class="externalLink link" data-v-5504ccba="">הערכת שווי נכס
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/realestate/agencies" target="_self"
+                                                class="internalLink link" data-v-5504ccba="">משרדי תיווך בישראל
+                                            </a></li>
+                                        <!---->
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-v-5504ccba="">
+                            <div class="show_content dropdown_content" data-v-212a6bed="" data-v-5504ccba=""><button
+                                    class="content_header" data-v-212a6bed=""><span class="title"
+                                        data-v-212a6bed="">רכב</span> <i class="y2i_arrow"
+                                        data-v-212a6bed=""></i></button>
+                                <div class="content" style="display:none;" data-v-212a6bed="">
+                                    <ul data-v-5504ccba="">
+                                        <li data-v-5504ccba=""><a href="/vehicles/private-cars" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">פרטי
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/vehicles/commercial-cars" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">מסחרי
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/vehicles/4X4" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">ג'יפים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/vehicles/motorcycles" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">אופנועים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/vehicles/scooters" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">קטנועים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/vehicles/other" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">מיוחדים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/vehicles/car-accessories" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">אביזרים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/vehicles/trucks" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">משאיות
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/vehicles/luxury-cars" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">רכבי יוקרה
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/vehicles/watercraft" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">כלי שייט
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_self"
+                                                href="http://pricelist.yad2.co.il/NewCars.php" class="externalLink link"
+                                                data-v-5504ccba="">קטלוג רכבים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_self" href="http://pricelist.yad2.co.il"
+                                                class="externalLink link" data-v-5504ccba="">מחירון רכב
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/vehicles/kones" target="_self"
+                                                class="internalLink link" data-v-5504ccba="">מרכזים וכינוס
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_self"
+                                                href="https://www.yad2.co.il/MiniSites/yad2Mimun"
+                                                class="externalLink link" data-v-5504ccba="">מימון רכב
+                                            </a></li>
+                                        <!---->
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-v-5504ccba="">
+                            <div class="show_content dropdown_content" data-v-212a6bed="" data-v-5504ccba=""><button
+                                    class="content_header" data-v-212a6bed=""><span class="title" data-v-212a6bed="">יד
+                                        שנייה</span> <i class="y2i_arrow" data-v-212a6bed=""></i></button>
+                                <div class="content" style="display:none;" data-v-212a6bed="">
+                                    <ul data-v-5504ccba="">
+                                        <li data-v-5504ccba=""><a href="/products/all" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">כל המוצרים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/products/electrical-appliances?category=1"
+                                                target="_self" class="internalLink link prefetched"
+                                                data-v-5504ccba="">מוצרי חשמל
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/products/furniture?category=2" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">ריהוט
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/products/businesses-for-sale?category=37"
+                                                target="_self" class="internalLink link prefetched"
+                                                data-v-5504ccba="">עסקים למכירה
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/products/sport?category=12" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">ספורט
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/products/cellular?category=5" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">סלולרי
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/products/baby-and-child?category=11"
+                                                target="_self" class="internalLink link prefetched"
+                                                data-v-5504ccba="">לתינוק ולילד
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/products/giveaway?category=59" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">הכל בחינם!
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/products/gaming-consoles?category=30"
+                                                target="_self" class="internalLink link prefetched"
+                                                data-v-5504ccba="">קונסולות משחק
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/products/computers-and-accessories?category=6"
+                                                target="_self" class="internalLink link prefetched"
+                                                data-v-5504ccba="">מחשבים וציוד נלווה
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/products/gardening?category=49" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">לגינה
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/products/fashion-and-grooming?category=18"
+                                                target="_self" class="internalLink link prefetched"
+                                                data-v-5504ccba="">אופנה וטיפוח
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_self"
+                                                href="http://www.yad2.pitchonlev.org.il/" class="externalLink link"
+                                                data-v-5504ccba="">בזאר יד2 מכל הלב
+                                            </a></li>
+                                        <!---->
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-v-5504ccba="">
+                            <div class="show_content dropdown_content" data-v-212a6bed="" data-v-5504ccba=""><button
+                                    class="content_header" data-v-212a6bed=""><span class="title"
+                                        data-v-212a6bed="">דרושים IL</span> <i class="y2i_arrow"
+                                        data-v-212a6bed=""></i></button>
+                                <div class="content" style="display:none;" data-v-212a6bed="">
+                                    <ul data-v-5504ccba="">
+                                        <li data-v-5504ccba=""><a target="_blank"
+                                                href="https://www.drushim.co.il/smartalerts.aspx?utm_source=yad2top"
+                                                class="externalLink link" data-v-5504ccba="">חיפוש עבודה
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_blank"
+                                                href="https://admin.drushim.co.il/jobs/new/?utm_source=yad2top"
+                                                class="externalLink link" data-v-5504ccba="">פרסום משרות
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_blank"
+                                                href="https://www.drushim.co.il/cvwizard/?utm_source=yad2top"
+                                                class="externalLink link" data-v-5504ccba="">כתיבת קורות חיים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_blank"
+                                                href="https://www.drushim.co.il/companies.aspx/?utm_source=yad2top"
+                                                class="externalLink link" data-v-5504ccba="">אודות החברות
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_blank"
+                                                href="https://www.drushim.co.il/דרושים-הייטק/?utm_source=yad2"
+                                                class="externalLink link" data-v-5504ccba="">דרושים הייטק
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_blank"
+                                                href="https://www.drushim.co.il/jobs/cat8/?utm_source=yad2top"
+                                                class="externalLink link" data-v-5504ccba="">דרושים סטודנטים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_blank"
+                                                href="https://play.google.com/store/apps/details?id=com.jobim"
+                                                class="externalLink link" data-v-5504ccba="">משרות ללא קו"ח
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_blank"
+                                                href="https://www.drushim.co.il/jobs/cat9/?utm_source=yad2"
+                                                class="externalLink link" data-v-5504ccba="">כספים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_blank"
+                                                href="https://www.drushim.co.il/jobs/cat17/?utm_source=yad2"
+                                                class="externalLink link" data-v-5504ccba="">מכירות
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_blank"
+                                                href="https://www.drushim.co.il/jobs/cat11/?utm_source=yad2top"
+                                                class="externalLink link" data-v-5504ccba="">שירות לקוחות
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_blank"
+                                                href="https://www.drushim.co.il/jobs/cat1/?utm_source=yad2top"
+                                                class="externalLink link" data-v-5504ccba="">אדמיניסטרציה
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_blank"
+                                                href="https://www.drushim.co.il/jobs/cat10/?utm_source=yad2top"
+                                                class="externalLink link" data-v-5504ccba="">מהנדסים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_blank"
+                                                href="https://www.drushim.co.il/jobs/cat29/?utm_source=yad2top"
+                                                class="externalLink link" data-v-5504ccba="">תחבורה
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_blank"
+                                                href="https://www.drushim.co.il/jobs/cat12/?utm_source=yad2top"
+                                                class="externalLink link" data-v-5504ccba="">מסעדנות/תיירות
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_blank"
+                                                href="https://www.drushim.co.il/jobs/cat25/?utm_source=yad2top"
+                                                class="externalLink link" data-v-5504ccba="">אבטחה
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_blank"
+                                                href="https://www.drushim.co.il/jobs/cat16/?utm_source=yad2top"
+                                                class="externalLink link" data-v-5504ccba="">בריאות
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_blank"
+                                                href="https://www.drushim.co.il/jobs/cat3/?utm_source=yad2top"
+                                                class="externalLink link" data-v-5504ccba="">בעלי מקצוע
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_blank"
+                                                href="https://www.drushim.co.il/jobs/cat7/?utm_source=yad2top"
+                                                class="externalLink link" data-v-5504ccba="">הדרכה/הוראה
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_blank"
+                                                href="https://www.drushim.co.il/jobs/cat27/?utm_source=yad2top"
+                                                class="externalLink link" data-v-5504ccba="">שיווק
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_blank"
+                                                href="https://drushim.co.il/categories.aspx?utm_source=yad2top"
+                                                class="externalLink link" data-v-5504ccba="">לתחומים נוספים
+                                            </a></li>
+                                        <!---->
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-v-5504ccba="">
+                            <div class="show_content dropdown_content" data-v-212a6bed="" data-v-5504ccba=""><button
+                                    class="content_header" data-v-212a6bed=""><span class="title"
+                                        data-v-212a6bed="">עסקים ומסחרי</span> <i class="y2i_arrow"
+                                        data-v-212a6bed=""></i></button>
+                                <div class="content" style="display:none;" data-v-212a6bed="">
+                                    <ul data-v-5504ccba="">
+                                        <li data-v-5504ccba=""><a href="/commercial" target="_self"
+                                                class="internalLink link" data-v-5504ccba="">כל מה שהעסק צריך
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/products/businesses-for-sale?category=37"
+                                                target="_self" class="internalLink link prefetched"
+                                                data-v-5504ccba="">עסקים למכירה
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/realestate/commercial" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">נדל"ן מסחרי
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/products/business-equipment?category=28"
+                                                target="_self" class="internalLink link prefetched"
+                                                data-v-5504ccba="">ציוד לעסקים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a
+                                                href="/products/businesses-for-sale?category=37&amp;item=290"
+                                                target="_self" class="internalLink link prefetched"
+                                                data-v-5504ccba="">זכיינות
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/realestate/commercial?property=62"
+                                                target="_self" class="internalLink link prefetched"
+                                                data-v-5504ccba="">חללי עבודה משותפים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a
+                                                href="/realestate/commercial?dealType=1&amp;property=12" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">משרדים להשכרה
+                                            </a></li>
+                                        <!---->
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-v-5504ccba="">
+                            <div class="show_content dropdown_content" data-v-212a6bed="" data-v-5504ccba=""><button
+                                    class="content_header" data-v-212a6bed=""><span class="title"
+                                        data-v-212a6bed="">חיות מחמד</span> <i class="y2i_arrow"
+                                        data-v-212a6bed=""></i></button>
+                                <div class="content" style="display:none;" data-v-212a6bed="">
+                                    <ul data-v-5504ccba="">
+                                        <li data-v-5504ccba=""><a href="/pets/dogs?species=1" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">כלבים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/pets/cats?species=2" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">חתולים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/pets/parrots?species=5" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">תוכים ובעלי כנף
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/pets/fish?species=3" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">דגים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/pets/reptiles?species=10" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">זוחלים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/pets/rodents?species=13" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">מכרסמים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/pets/horses?species=8" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">סוסים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/pets/chickens?species=22" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">תרנגולים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/pets/livestock?species=21" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">חיות משק
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/pets/ferrets?species=20" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">חמוסים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a href="/pets/all" target="_self"
+                                                class="internalLink link prefetched" data-v-5504ccba="">כל בעלי החיים
+                                            </a></li>
+                                        <!---->
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-v-5504ccba="">
+                            <div class="show_content dropdown_content" data-v-212a6bed="" data-v-5504ccba=""><button
+                                    class="content_header" data-v-212a6bed=""><span class="title"
+                                        data-v-212a6bed="">בעלי מקצוע</span> <i class="y2i_arrow"
+                                        data-v-212a6bed=""></i></button>
+                                <div class="content" style="display:none;" data-v-212a6bed="">
+                                    <ul data-v-5504ccba="">
+                                        <li data-v-5504ccba=""><a target="_self"
+                                                href="http://www.pro.yad2.co.il/nfubh+cshev+urhauh+krfc_,k+tchc+hpu"
+                                                class="externalLink link" data-v-5504ccba="">מכוני בדיקה ורישוי לרכב
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_self"
+                                                href="http://www.pro.yad2.co.il/rjhm,+rfc" class="externalLink link"
+                                                data-v-5504ccba="">רחיצת רכב
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_self"
+                                                href="http://www.pro.yad2.co.il/anth+nereghi_,k+tchc+hpu"
+                                                class="externalLink link" data-v-5504ccba="">שמאי מקרקעין
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_self"
+                                                href="http://www.pro.yad2.co.il/junrh+cbhhi" class="externalLink link"
+                                                data-v-5504ccba="">חומרי בנין
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_self"
+                                                href="http://www.pro.yad2.co.il/thbxykyurho" class="externalLink link"
+                                                data-v-5504ccba="">אינסטלטורים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_self"
+                                                href="http://www.pro.yad2.co.il/janktho_,k+tchc+hpu"
+                                                class="externalLink link" data-v-5504ccba="">חשמלאים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_self"
+                                                href="http://www.pro.yad2.co.il/ahpumho" class="externalLink link"
+                                                data-v-5504ccba="">שיפוצים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_self" href="http://www.pro.yad2.co.il/vucku"
+                                                class="externalLink link" data-v-5504ccba="">הובלות
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_self"
+                                                href="http://www.pro.yad2.co.il/rvhyho_,k+tchc+hpu"
+                                                class="externalLink link" data-v-5504ccba="">רהיטים
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_self"
+                                                href="http://www.pro.yad2.co.il/jcru,+bhehui+utjzev_,k+tchc+hpu"
+                                                class="externalLink link" data-v-5504ccba="">חברות ניקיון ואחזקה
+                                            </a></li>
+                                        <li data-v-5504ccba=""><a target="_self" href="http://www.pro.yad2.co.il/"
+                                                class="externalLink link" data-v-5504ccba="">לכל בעלי המקצוע
+                                            </a></li>
+                                        <!---->
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-v-5504ccba=""><a href="/recreation/all" target="_self"
+                                class="internalLink link not_drop_title prefetched" data-v-5504ccba="">תיירות ונופש
+                            </a></li>
+                        <li data-v-5504ccba=""><a href="/private-teachers/all" target="_self"
+                                class="internalLink link not_drop_title prefetched" data-v-5504ccba="">לימודים
+                            </a></li>
+                        <li data-v-5504ccba=""><a target="_blank" href="https://magazine.yad2.co.il/"
+                                class="externalLink link not_drop_title" data-v-5504ccba="">מגזין יד2
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="menu_bottom_section" data-v-10a4c762=""><a href="/eula" target="_self"
+                        class="internalLink icon prefetched" data-v-10a4c762=""><i class="y2menu_Policy"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M1.439 16.873l-1.439 7.127 7.128-1.437 16.873-16.872-5.69-5.69-16.872 16.872zm4.702 3.848l-3.582.724.721-3.584 2.861 2.86zm15.031-15.032l-13.617 13.618-2.86-2.861 10.825-10.826 2.846 2.846 1.414-1.414-2.846-2.846 1.377-1.377 2.861 2.86z" />
+                            </svg></i> <span class="text">תקנון</span></a> <a href="/privacy" target="_self"
+                        class="internalLink icon prefetched" data-v-10a4c762=""><i class="y2menu_Privacy"><svg
+                                width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                                clip-rule="evenodd">
+                                <path
+                                    d="M16 1c-4.418 0-8 3.582-8 8 0 .585.063 1.155.182 1.704l-8.182 7.296v5h6v-2h2v-2h2l3.066-2.556c.909.359 1.898.556 2.934.556 4.418 0 8-3.582 8-8s-3.582-8-8-8zm-6.362 17l3.244-2.703c.417.164 1.513.703 3.118.703 3.859 0 7-3.14 7-7s-3.141-7-7-7c-3.86 0-7 3.14-7 7 0 .853.139 1.398.283 2.062l-8.283 7.386v3.552h4v-2h2v-2h2.638zm.168-4l-.667-.745-7.139 6.402v1.343l7.806-7zm10.194-7c0-1.104-.896-2-2-2s-2 .896-2 2 .896 2 2 2 2-.896 2-2zm-1 0c0-.552-.448-1-1-1s-1 .448-1 1 .448 1 1 1 1-.448 1-1z" />
+                            </svg></i> <span class="text">פרטיות ותנאים</span></a> <button class="icon accessability"
+                        data-v-10a4c762=""><i class="y2menu_Accessability" data-v-10a4c762=""><svg width="24"
+                                height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                <path
+                                    d="M16 1c-4.418 0-8 3.582-8 8 0 .585.063 1.155.182 1.704l-8.182 7.296v5h6v-2h2v-2h2l3.066-2.556c.909.359 1.898.556 2.934.556 4.418 0 8-3.582 8-8s-3.582-8-8-8zm-6.362 17l3.244-2.703c.417.164 1.513.703 3.118.703 3.859 0 7-3.14 7-7s-3.141-7-7-7c-3.86 0-7 3.14-7 7 0 .853.139 1.398.283 2.062l-8.283 7.386v3.552h4v-2h2v-2h2.638zm.168-4l-.667-.745-7.139 6.402v1.343l7.806-7zm10.194-7c0-1.104-.896-2-2-2s-2 .896-2 2 .896 2 2 2 2-.896 2-2zm-1 0c0-.552-.448-1-1-1s-1 .448-1 1 .448 1 1 1 1-.448 1-1z" />
+                            </svg></i> <span class="text" data-v-10a4c762="">נגישות</span></button> <button class="icon"
+                        data-v-10a4c762=""><i class="y2menu_Question" data-v-10a4c762=""><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M14.601 21.5c0 1.38-1.116 2.5-2.499 2.5-1.378 0-2.499-1.12-2.499-2.5s1.121-2.5 2.499-2.5c1.383 0 2.499 1.119 2.499 2.5zm-2.42-21.5c-4.029 0-7.06 2.693-7.06 8h3.955c0-2.304.906-4.189 3.024-4.189 1.247 0 2.57.828 2.684 2.411.123 1.666-.767 2.511-1.892 3.582-2.924 2.78-2.816 4.049-2.816 7.196h3.943c0-1.452-.157-2.508 1.838-4.659 1.331-1.436 2.986-3.222 3.021-5.943.047-3.963-2.751-6.398-6.697-6.398z" />
+                            </svg></i> <span class="text" data-v-10a4c762="">מענה
+                            לשאלות</span></button> <button class="icon" data-v-10a4c762=""><i
+                            class="y2menu_Mobile_side_menu" data-v-10a4c762=""><svg xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 2c0-1.104-.896-2-2-2h-10c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h10c1.104 0 2-.896 2-2v-20zm-8.5 0h3c.276 0 .5.224.5.5s-.224.5-.5.5h-3c-.276 0-.5-.224-.5-.5s.224-.5.5-.5zm1.5 20c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-14.024h10v14.024z" />
+                            </svg></i> <span class="text" data-v-10a4c762="">יצירת קשר</span></button></div>
+            </nav>
+        </div>
+
+    </div>
+    <div *ngIf="sideNavOpen" class="y2-backdrop y2-sidenav-backdrop" data-v-10a4c762=""></div>
+    <div class="menu-buttons">
+        <div class="logo-wrapper"><a href="/" target="_self" class="internalLink nuxt-link-active prefetched"><img
+                    src="//assets.yad2.co.il/yad2site/y2assets/images/header/yad2Logo.png" alt="לוגו יד2 yad2 logo"></a>
+        </div>
+        <div class="favorite" (click)="onLiked()">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2oIZ2Cbe3qsrEuibKqVJoGvoRrcUXONRLoFVnv5Xc7-PV9ZD8Vma_cx6B_U9o5Sdt-G8&usqp=CAU"
+                width="27px" height="27px">
+                <div *ngIf="likedCount>0" class="on-like">{{likedCount}}</div>
+        </div>
+        <button class="personal">+ פרסום מודעה חדשה</button>
+    </div>
+</div>
+<div class="navbar_wrapper">
+    <div class="feed_navbar">
+    <div class="options">
+        <div class="sale option">מכירה</div>
+        <div class="rent option">השכרה</div>
+        <div class="roomate option">דירות שותפים</div>
+        <div class="commertional-real-estait option">נדל"ן מסחרי</div>
+    </div>
+    <div class="sub-options">
+        <div class="option option-1"><span><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M10.052 19.001l.051.002.051.003.05.004.051.006.05.007.049.008.049.01.049.01.048.012.048.013.047.014.046.015.047.016.045.018.045.018.045.02.044.02.043.022.043.022.043.024.041.025.041.025.04.027.04.027.039.028.038.03.037.03.037.031.036.032.035.032.034.034.034.034.032.035.032.036.031.037.03.037.03.038.028.039.027.04.027.04.025.041.025.041.024.043.022.042.022.044.02.044.02.045.018.045.018.045.016.047.015.046.014.047.013.048.012.048.01.049.01.049.008.049.007.05.006.051.004.05.003.051.002.051.001.052v1h1v2h-13v-2h1v-1l.001-.052.002-.051.003-.051.004-.05.006-.051.007-.05.008-.049.01-.049.01-.049.012-.048.013-.048.014-.047.015-.046.016-.047.018-.045.018-.045.02-.045.02-.044.022-.044.022-.042.024-.043.025-.041.025-.041.027-.04.027-.04.028-.039.03-.038.03-.037.031-.037.032-.036.032-.035.034-.034.034-.034.035-.032.036-.032.037-.031.037-.03.038-.03.039-.028.04-.027.04-.027.041-.025.041-.025.043-.024.043-.022.043-.022.044-.02.045-.02.045-.018.045-.018.047-.016.046-.015.047-.014.048-.013.048-.012.049-.01.049-.01.049-.008.05-.007.051-.006.05-.004.051-.003.051-.002.052-.001h7l.052.001zm-7.039 1.999h-.013v1h7v-1h-6.987zm9.356-20.999l.05.001.05.003.049.005.049.005.049.007.049.007.048.009.048.011.048.011.047.012.047.014.046.014.046.016.046.017.045.018.045.019.044.021.044.021.043.022.043.024.042.025.041.025.041.027.041.028.039.029.039.029.039.031.038.032.037.033.036.034.036.035 4.949 4.949.035.036.034.036.033.038.032.037.031.039.03.039.029.04.027.04.027.042.026.041.024.042.024.043.022.043.022.044.02.044.019.045.018.045.017.046.016.046.015.046.013.047.012.047.012.048.01.048.009.048.007.049.007.048.005.049.005.05.003.049.001.05.001.05-.001.061-.003.061-.004.06-.006.06-.008.059-.01.058-.011.058-.013.057-.015.056-.016.056-.018.055-.019.054-.02.053-.023.053-.023.051-.025.051-.027.05-.027.05-.029.048-.031.047-.031.046-.033.046-.034.044-.036.044-.036.042-.038.041-.038.041-.04.039-.041.038-.041.037-.043.035-.044.035-.044.033-.046.032-.046.031-.047.029-.049.029-.048.027-.05.025-.05.024-.051.023-.052.021-.052.02-.053.019-.054.017-.054.016-.054.014-.056.012-.055.011-.056.009-.057.008-.057.006-.057.005-.057.003-.058.001-.058-.001-.059-.002-.058-.004-.059-.006-.059-.008-.059-.009-.059-.012-.06-.013-.059-.015-1.219 1.22 2.099 1.947 1.696 1.57 1.33 1.229 1.003.924.714.656.463.424.249.227.075.068.05.051.049.052.047.053.045.054.045.055.042.056.041.056.04.057.038.058.037.059.035.059.034.06.032.061.031.061.028.062.028.063.026.063.024.064.023.064.02.065.02.065.018.066.016.066.014.067.013.067.011.067.009.068.008.067.006.069.005.068.002.069.001.069-.001.073-.003.072-.005.072-.006.071-.009.071-.011.07-.012.07-.014.069-.016.069-.017.068-.02.068-.021.066-.022.067-.025.065-.026.065-.027.064-.029.063-.031.062-.032.061-.034.061-.035.06-.036.059-.038.057-.04.057-.041.056-.042.055-.043.054-.045.052-.046.052-.047.05-.049.05-.05.048-.05.047-.052.045-.054.045-.054.043-.055.042-.057.04-.057.039-.058.038-.06.036-.06.035-.061.034-.063.031-.063.031-.063.028-.065.028-.066.025-.066.024-.067.023-.068.02-.068.019-.069.017-.07.016-.071.013-.071.012-.071.01-.073.008-.072.006-.074.005-.073.002h-.074l-.075-.001-.075-.004-.063-.005-.062-.006-.062-.007-.062-.009-.062-.011-.061-.012-.061-.013-.061-.015-.06-.017-.06-.018-.06-.019-.059-.021-.059-.022-.059-.024-.058-.025-.058-.026-.057-.028-.057-.03-.056-.031-.056-.032-.056-.033-.055-.035-.054-.037-.054-.037-.054-.039-.053-.041-.052-.042-.052-.043-.051-.044-.051-.046-.05-.047-.049-.049-.042-.044-.075-.082-.241-.269-.349-.392-.437-.495-1.071-1.216-1.213-1.38-1.213-1.381-1.068-1.218-1.133-1.292-1.313 1.312.015.061.013.061.011.061.009.06.007.061.006.06.003.059.002.06.001.059-.002.059-.003.058-.005.058-.006.058-.009.057-.009.056-.012.056-.012.056-.015.055-.016.054-.017.054-.019.053-.02.052-.022.052-.023.051-.025.05-.026.049-.027.049-.028.048-.03.046-.031.047-.032.045-.034.044-.035.043-.035.042-.037.042-.039.04-.039.039-.04.038-.041.037-.043.036-.043.035-.045.033-.045.033-.046.031-.047.029-.048.029-.049.027-.05.026-.051.024-.051.023-.053.022-.053.02-.053.019-.055.017-.055.016-.056.014-.056.013-.057.011-.058.009-.058.008-.059.006-.059.004-.06.003-.06.001-.05-.001-.05-.002-.05-.003-.05-.004-.049-.005-.049-.007-.048-.008-.049-.009-.048-.01-.047-.011-.047-.013-.047-.014-.047-.014-.046-.016-.045-.017-.045-.018-.045-.019-.044-.021-.044-.021-.043-.022-.043-.024-.042-.025-.041-.025-.041-.027-.041-.028-.039-.029-.04-.029-.038-.031-.038-.032-.037-.033-.036-.034-.036-.035-4.949-4.948-.004-.004-.035-.036-.033-.036-.033-.038-.032-.038-.031-.038-.029-.039-.029-.04-.028-.041-.026-.041-.026-.041-.024-.042-.023-.043-.023-.043-.021-.043-.02-.045-.019-.044-.018-.045-.017-.046-.015-.045-.015-.047-.013-.046-.013-.047-.011-.048-.01-.047-.009-.048-.008-.049-.006-.048-.005-.049-.005-.049-.003-.05-.001-.049-.001-.05.001-.05.001-.049.003-.05.004-.049.006-.049.006-.049.008-.048.009-.048.01-.048.011-.047.012-.047.014-.047.014-.047.016-.046.017-.045.018-.045.019-.045.02-.044.021-.044.023-.043.023-.043.025-.042.025-.042.027-.041.028-.04.029-.04.029-.04.031-.038.032-.038.033-.038.034-.036.035-.036.051-.049.052-.047.054-.045.054-.042.055-.041.056-.038.058-.036.058-.034.058-.032.06-.029.06-.028.061-.025.061-.023.062-.021.062-.019.063-.017.063-.015.063-.013.063-.01.064-.009.064-.006.063-.005.064-.002.064-.001.063.002.064.004.063.005.063.008.063.009.062.012.062.013.061.016 5.679-5.679-.016-.062-.013-.063-.012-.063-.01-.063-.007-.064-.006-.064-.003-.064-.002-.064.001-.064.003-.064.004-.064.007-.063.009-.064.011-.063.013-.063.015-.063.017-.063.019-.062.021-.061.023-.061.025-.06.028-.06.029-.059.032-.058.033-.057.036-.057.038-.055.04-.055.042-.053.044-.053.046-.051.048-.05.036-.035.036-.034.037-.033.038-.032.039-.031.039-.03.04-.029.04-.028.041-.027.042-.025.042-.025.043-.024.043-.022.044-.022.044-.02.045-.019.045-.018.046-.017.046-.016.046-.015.047-.013.047-.013.048-.011.048-.01.048-.009.049-.008.049-.007.049-.005.049-.005.05-.003.05-.001.05-.001.05.001zm-5.349 8.712l3.536 3.537 1.773-1.774 1.107 1.211 2.532 2.775 1.432 1.57 1.345 1.478.594.654.518.571.421.466.308.343.028.032.029.032.031.031.033.029.034.029.035.027.037.026.038.024.038.023.04.02.04.018.041.016.041.013.042.01.021.004.021.003.021.002.021.002.027.001.026.001.025-.001.025-.001.024-.003.024-.002.024-.004.023-.004.044-.011.041-.012.04-.015.037-.016.035-.017.033-.018.03-.019.029-.019.025-.019.024-.019.021-.018.018-.017.029-.028.027-.029.026-.031.023-.031.023-.032.02-.033.018-.034.017-.035.015-.035.013-.035.011-.037.009-.036.008-.037.005-.037.003-.038.001-.037-.001-.038-.003-.039-.005-.038-.007-.037-.009-.037-.011-.037-.014-.037-.015-.036-.016-.035-.019-.035-.021-.034-.022-.034-.025-.034-.026-.032-.028-.033-.03-.031-.078-.07-.041-.034-.024-.02-.016-.015-.189-.174-.217-.202-.242-.226-.265-.25-.591-.559-.656-.625-.705-.674-.735-.705-.748-.719-.744-.717-1.405-1.356-1.177-1.138-1.11-1.076 1.634-1.635-3.537-3.536-3.882 3.884zm-1.415 1.415l-1.411.003-.001.001 4.947 4.946.001-1.413-3.535-3.537h-.001zm6.714-6.716l-.002.003 3.536 3.536.002-.002 1.412-.002-4.948-4.948v1.413z"/></svg></span> כונס נכסים</div>
+        <div class="option option-1"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 3.875l-6 1.221 1.716 1.708-5.351 5.358-3.001-3.002-7.336 7.242 1.41 1.418 5.922-5.834 2.991 2.993 6.781-6.762 1.667 1.66 1.201-6.002zm0 16.125v2h-24v-20h2v18h22z"/></svg></span> מדד הנדל"ן</div>
+    </div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<div class="main-content">
+    <div class="main-span" style="padding:0px 10px; display: flex; justify-content: space-between;">
+        <div>ראשי <span style="color: #999999;"> / נכסים למכירה</span></div>
+        <button class="access">
+            <img style="width: 30px; height: 35px;"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzabzXRV2El2SNRFuupzaFGPm4P1GSss59Cw&usqp=CAU"
+                alt="">
+            <span>נגישות</span>
+        </button>
+    </div>
+    <div class="yad-2-image">
+        <img src="https://tpc.googlesyndication.com/simgad/12095129440608867994" alt="">
+    </div>
+    <br>
+    <br>
+    <app-search-form></app-search-form>
+    <app-adds></app-adds>
+    <div class="conteinar">
+        <app-real-estait></app-real-estait>
+        <div class="side-add">
+            <div class="big-add">
+                <img src="https://tpc.googlesyndication.com/simgad/3039144566577913549" alt="">
+            </div>
+            <div class="inner-side">
+                <div class="my_alerts_widget_item" data-v-61e22bc1="" data-v-3e472110="">
+                    <div class="title" data-v-61e22bc1=""><svg width="28" height="28" viewBox="0 0 20 20"
+                            class="bell_icon yellow" data-v-192c75e9="" data-v-61e22bc1="">
+                            <g transform="translate(2 1)" data-v-192c75e9="">
+                                <ellipse cx="7.206" cy="14.44" fill="#999" stroke="#999" stroke-width=".926" rx="1.9"
+                                    ry="1.878" transform="rotate(18 9.206 14.44)" data-v-192c75e9=""></ellipse>
+                                <path fill="#999" stroke="#999" stroke-width=".5"
+                                    d="M12.8231052,15.8320384 L1.59588336,12.1600933 C0.741326334,11.8806041 0.269836303,10.9686617 0.542985389,10.1224645 C0.815755737,9.27744069 1.72954622,8.81726719 2.58246568,9.09622075 C2.65893815,9.12123163 2.74258017,9.07909159 2.76739036,9.00223131 L3.8459642,5.66088349 C4.61481752,3.27902861 6.84212555,1.71637786 9.30527285,1.73266656 L9.38971013,1.47108564 C9.6874779,0.548621518 10.6844662,0.047077824 11.6140351,0.351100142 C12.5450902,0.655608518 13.0578164,1.64918572 12.7595436,2.57321436 L12.6750952,2.83482976 C14.6772473,4.27905538 15.566613,6.86145268 14.797923,9.24280184 L13.7193491,12.5841497 C13.6940463,12.6625362 13.7361292,12.7441081 13.8140718,12.7695998 C14.6656729,13.0481222 15.1376194,13.9612666 14.8647776,14.8065116 C14.5919484,15.6517178 13.6770509,16.1113276 12.8231052,15.8320384 Z"
+                                    class="bell_stroke" data-v-192c75e9=""></path>
+                                <path fill="#EEE"
+                                    d="M9.59960261,2.62300607 L9.94192819,2.64576241 L10.2321685,1.74661782 C10.3809686,1.2856454 10.8799668,1.03461995 11.3443694,1.18650621 C11.8102812,1.33888607 12.0663829,1.83516822 11.9170852,2.29768218 L11.626842,3.19683568 L11.9170605,3.38096657 C13.7800716,4.56296579 14.6361763,6.85847156 13.9554646,8.96726966 L12.8768908,12.3086175 C12.7026263,12.8484768 13.0012781,13.4273719 13.5444061,13.6050059 C13.9311015,13.7314774 14.1461096,14.1474854 14.0223193,14.5309794 C13.8985247,14.9144864 13.481759,15.1238537 13.092771,14.9966324 L1.86554913,11.3246872 C1.47584389,11.1972313 1.26136338,10.7823892 1.38544376,10.3979967 C1.50929716,10.0143073 1.92520534,9.80486117 2.31279991,9.93162681 C2.85466526,10.1088478 3.43614333,9.81589092 3.60984873,9.27776349 L4.68842257,5.93641567 C5.369295,3.82711954 7.40211168,2.47692622 9.59960261,2.62300607 Z"
+                                    class="bell_fill" data-v-192c75e9=""></path>
+                            </g>
+                        </svg> <span class="text" data-v-61e22bc1="">אל תפספסו אף מודעה!</span></div> <span
+                        class="main_text" data-v-61e22bc1="">חפשו לפי אזור, כמות חדרים או מחיר, וקבלו התראות על מודעות
+                        חדשות</span> <button class="y2_btn primary green" data-v-61e22bc1="">
+                        <!----> <span class="button_content">
+                            <!----> <span class="button_text">
+                                עדכנו אותי
+                            </span>
+                        </span>
+                    </button>
+                </div>
+                <div class="side-info">
+                    <h3 data-v-65ae0442="" class="title">דירות שנמכרו לאחרונה </h3>
+                    <span data-v-65ae0442="" class="sub_title">מנתוני רשות המיסים</span>
+                    <div>
+                    <ul data-v-65ae0442="" class="swiper-wrapper">
+                        <li data-v-301d27cc="" data-v-65ae0442="" class="home_prices_item swiper-slide"><span
+                                data-v-301d27cc="" class="price">620,000 ₪</span>
+                            <div data-v-301d27cc="" class="address"><span data-v-301d27cc="">דירה בבית קומות</span>
+                                <span data-v-301d27cc="">בהעליה 50, עפולה</span></div>
+                            <div data-v-301d27cc="" class="more_details"><span data-v-301d27cc="">5 חדרים </span> <span
+                                    data-v-301d27cc=""> | קומה 1 מתוך 5</span> <span data-v-301d27cc=""> | 135
+                                    מ"ר</span></div> <span data-v-301d27cc="" class="date">נמכר ב 31.01.21</span>
+                        </li>
+                        <li data-v-301d27cc="" data-v-65ae0442="" class="home_prices_item swiper-slide"><span
+                                data-v-301d27cc="" class="price">690,000 ₪</span>
+                            <div data-v-301d27cc="" class="address"><span data-v-301d27cc="">דירה בבית קומות</span>
+                                <span data-v-301d27cc="">בירושלים 41, עפולה</span></div>
+                            <div data-v-301d27cc="" class="more_details"><span data-v-301d27cc="">4 חדרים </span> <span
+                                    data-v-301d27cc=""> | קומה 3 מתוך 6</span> <span data-v-301d27cc=""> | 123
+                                    מ"ר</span></div> <span data-v-301d27cc="" class="date">נמכר ב 31.01.21</span>
+                        </li>
+                        <li data-v-301d27cc="" data-v-65ae0442="" class="home_prices_item swiper-slide"><span
+                                data-v-301d27cc="" class="price">1,085,000 ₪</span>
+                            <div data-v-301d27cc="" class="address"><span data-v-301d27cc="">דירה בבית קומות</span>
+                                <span data-v-301d27cc="">באדמונית 20, עפולה</span></div>
+                            <div data-v-301d27cc="" class="more_details"><span data-v-301d27cc="">4 חדרים </span> <span
+                                    data-v-301d27cc=""> | קומה 1 מתוך 7</span> <span data-v-301d27cc=""> | 122
+                                    מ"ר</span></div> <span data-v-301d27cc="" class="date">נמכר ב 31.01.21</span>
+                        </li>
+                        <li data-v-301d27cc="" data-v-65ae0442="" class="home_prices_item swiper-slide"><span
+                                data-v-301d27cc="" class="price">1,215,000 ₪</span>
+                            <div data-v-301d27cc="" class="address"><span data-v-301d27cc="">דירה בבית קומות</span>
+                                <span data-v-301d27cc="">בחברת עזרא 4, חדרה</span></div>
+                            <div data-v-301d27cc="" class="more_details"><span data-v-301d27cc="">5 חדרים </span> <span
+                                    data-v-301d27cc=""> | קומה 9 מתוך 10</span> <span data-v-301d27cc=""> | 135
+                                    מ"ר</span></div> <span data-v-301d27cc="" class="date">נמכר ב 31.01.21</span>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

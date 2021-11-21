@@ -1,0 +1,69 @@
+* {
+    font-family: 'Rubik',sans-serif;
+    box-sizing: border-box;
+}
+.conteinar{
+    padding: 50px;
+}
+.page-tittle{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0 0 2px 0 rgb(0 0 0 / 14%);
+    background-color: #fff;
+    padding: 0;
+}
+.tittle{
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    padding: 15px 0 0;
+}
+.button-acsses{
+    padding: 5px 0;
+    display: flex;
+}
+.acsses{
+    margin: 5px 0;
+    height: 40px;
+    background-color: #002f75;
+    width: 100px;
+    border-radius: 3px;
+    color: #fff;
+    padding: 0;
+}
+button {
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    background-color: initial;
+    outline: none;
+}
+.liked-wrapper{
+    display: flex;
+    flex-direction: column;
+   padding: 20px;
+   margin-top: 20px;
+}
+.liked-tittle{
+    display: flex;
+    justify-content: space-between;
+}
+.little-title{
+    font-size: 1.125rem;
+}
+.share-it{
+    font-size: .875rem;
+    line-height: 1.0625rem;
+    font-weight: 500;
+    color: #ff7100;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 4px 0 rgb(44 44 44 / 12%);
+    padding: 5px 15px;
+}
